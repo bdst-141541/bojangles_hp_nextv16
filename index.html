@@ -92,6 +92,21 @@
   <img src="images/Labrador 2.jpg" alt="ラブラドール参考作品2">
   <img src="images/Labrador 3.jpg" alt="ラブラドール参考作品3">
 </div>
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* ← ここで横の空白を広げる */
+  margin-top: 30px;
+}
+
+.photo-row img {
+  width: 280px; /* ← 少し小さくして余白を確保 */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 <section class="bg-white py-12 px-4 font-sans">
   <h2 class="text-xl font-semibold mb-6">制作内容と価格</h2>
   <table class="table-auto w-full border border-gray-300 text-sm md:text-base">
@@ -216,5 +231,6 @@
   </div>
 
 </section>
+
 
 
